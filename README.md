@@ -3,17 +3,19 @@ Spass: Spectrum Sensing as a Service via Smart Contracts
 
 ## What is Spass?
 
-Mobile network operators can expand their capacity by aggregating their licensed spectrum with the spectrum discovered opportunistically, i.e., spatiotemporally unused spectrum by other primary users. For an accurate identification of the spectral opportunities, the mobile network has to deploy multiple sensors or it can offload this task to nearby nodes with sensing capabilities,
-so called helpers. Unfortunately, incentives are limited for helpers to perform energy-wasteful spectrum sensing. Instead, we envision spectrum sensing as a service (Spass) in which a smart
-contract running on a blockchain (BC) describes the required sensing service parameters and the contracted helpers receive payments only if they perform sensing accurately as agreed in
-the contract. In this paper, we first introduce Spass and derive a closed formula defining the profitability of a Spass-based business as a function of the spectral efficiency, cost of helpers, and
-cost of the service. Moreover, we propose two-threshold based voting (TTBV) algorithm to ensure that the fraudulent helpers are excluded from Spass. Via numerical analysis, we show that
-TTBV causes almost zero false alarms and can exclude malicious users from the contract after only a few iterations. Finally, we develop a running prototype of Spass on Ethereum BC and share
-the related source code on a publicly-available repository.
+Mobile network operators can expand their capacity by aggregating their licensed spectrum with the spectrum discovered 
+opportunistically, i.e., spatiotemporally unused spectrum by other primary users. For an accurate identification of the 
+spectral opportunities, the mobile network has to deploy multiple sensors or it can offload this task to nearby nodes 
+with sensing capabilities, so called helpers. Unfortunately, incentives are limited for helpers to perform energy-wasteful 
+spectrum sensing. Instead, we envision **spectrum sensing as a service (Spass)** in which a smart contract running on a 
+blockchain (BC) describes the required sensing service parameters and the contracted helpers receive payments only if 
+they perform sensing accurately as agreed in the contract. 
 
-![Spass system model](images/SmartContract_SysModel.jpg "Spass system model: SU network is interested in accessing the primary user's band opportunistically to serve its users. Helpers are the nodes offering sensing service. The agreement and transactions are processed through the smart contract defined in Ethereum blockchain."){:height="50%" width="50%"}
+In this repository you find the source code for the running prototype of Spass on Ethereum BC.
 
-The full paper can be found here:
+![Spass system model](images/SmartContract_SysModel.jpg "Spass system model: SU network is interested in accessing the primary user's band opportunistically to serve its users. Helpers are the nodes offering sensing service. The agreement and transactions are processed through the smart contract defined in Ethereum blockchain.")
+
+The full paper describing all details of the proposed spectrum sensing as a service can be found here:
 [full paper](https://www2.informatik.hu-berlin.de/~zubow/spass_dyspan_2018.pdf "Full paper")
 
 ## How to use it?
