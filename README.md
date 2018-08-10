@@ -11,6 +11,8 @@ cost of the service. Moreover, we propose two-threshold based voting (TTBV) algo
 TTBV causes almost zero false alarms and can exclude malicious users from the contract after only a few iterations. Finally, we develop a running prototype of Spass on Ethereum BC and share
 the related source code on a publicly-available repository.
 
+![Spass system model](images/SmartContract_SysModel.jpg "Spass system model: SU network is interested in accessing the primary user's band opportunistically to serve its users. Helpers are the nodes offering sensing service. The agreement and transactions are processed through the smart contract defined in Ethereum blockchain.")
+
 The full paper can be found here:
 [full paper](https://www2.informatik.hu-berlin.de/~zubow/ "Full paper")
 
@@ -22,7 +24,7 @@ You can test our contract using Remix IDE. Go to [RemixIDE](https://remix.ethere
 
 ## Example scenario
 
-To understand the usage of the contract consider the following simple scenario with the contract owner (SU) and a single helper node (H). Here the SU deploy and initializes the contract whereas the helper registers and reports his sensing results. Afterwards the SU performs clearing so that the SU is able to withdraw his funds.
+To understand the usage of the contract consider the following simple scenario with the contract owner (SU) and a single helper node (H). Here the SU deploys and initializes the contract whereas the helper registers and reports its sensing results. Afterwards the SU performs clearing so that the SU is able to withdraw its funds.
 
 For this example the following accounts are used:
 
@@ -63,6 +65,12 @@ Note: the account of H should increase afterwards by 6.4 gwei (=0.0000000064 ETH
 
 ## How to reference to?
 
-Please reference the following paper:
+Just use the following bibtex:
 
-"Spass: Spectrum Sensing as a Service via Smart Contracts", S. Bayhan, A. Zubow, and A. Wolisz, IEEE DYSPAN, 2018
+    @inproceedings{bayhan_spass_dyspan18,
+    author = {Bayhan, Suzan and  Zubow, Anatolij and Wolisz, Adam},
+    title = {{Spass: Spectrum Sensing as a Service via Smart Contracts}},
+    booktitle = {IEEE International Symposium on Dynamic Spectrum Access Networks (DYSPAN)},
+    location = {Seoul, South Korea},
+    year = {2018} 
+    }
