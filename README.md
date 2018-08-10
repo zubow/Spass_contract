@@ -11,10 +11,10 @@ cost of the service. Moreover, we propose two-threshold based voting (TTBV) algo
 TTBV causes almost zero false alarms and can exclude malicious users from the contract after only a few iterations. Finally, we develop a running prototype of Spass on Ethereum BC and share
 the related source code on a publicly-available repository.
 
-![Spass system model](images/SmartContract_SysModel.jpg "Spass system model: SU network is interested in accessing the primary user's band opportunistically to serve its users. Helpers are the nodes offering sensing service. The agreement and transactions are processed through the smart contract defined in Ethereum blockchain.")
+![Spass system model](images/SmartContract_SysModel.jpg "Spass system model: SU network is interested in accessing the primary user's band opportunistically to serve its users. Helpers are the nodes offering sensing service. The agreement and transactions are processed through the smart contract defined in Ethereum blockchain."){:height="50%" width="50%"}
 
 The full paper can be found here:
-[full paper](https://www2.informatik.hu-berlin.de/~zubow/ "Full paper"){:height="50%" width="50%"}
+[full paper](https://www2.informatik.hu-berlin.de/~zubow/spass_dyspan_2018.pdf "Full paper")
 
 ## How to use it?
 
